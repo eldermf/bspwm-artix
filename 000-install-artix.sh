@@ -77,7 +77,7 @@ log_and_print() {
 }
 
 log_and_print "Creating swap file..."
-dd if=/dev/zero of=/swapfile bs=1G count=2 status=progress
+dd if=/dev/zero of=/swapfile bs=3G count=2 status=progress
 chmod 600 /swapfile
 mkswap /swapfile
 swapon /swapfile
