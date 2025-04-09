@@ -40,9 +40,6 @@ fi
 log_and_print "Setting keyboard layout to br-abnt2..."
 run loadkeys br-abnt2
 
-log_and_print "Enabling NTP..."
-run timedatectl set-ntp true
-
 log_and_print "Updating pacman database..."
 run pacman -Syyy
 
