@@ -1,8 +1,10 @@
 #!/bin/bash
 
-# Script de Instalação do Artix Linux com OpenRC
-# Autor: Claude
-# Data: 09/04/2025
+# ------------------------------------------------------------------------------
+# Artix Linux Installation Script (OpenRC)
+# Author: Elder M. Fouraux		09/04/2025
+# ------------------------------------------------------------------------------
+#!/bin/bash
 
 # Cores para melhor visualização
 RED='\033[0;31m'
@@ -123,7 +125,7 @@ print_error() {
 
 # Passo 5: Criar Swapfile
 print_step "5" "Criando Swapfile"
-dd if=/dev/zero of=/swapfile bs=1G count=2 status=progress
+dd if=/dev/zero of=/swapfile bs=3G count=2 status=progress
 chmod 600 /swapfile
 mkswap /swapfile
 swapon /swapfile
@@ -149,7 +151,7 @@ echo "$hostname_input" > /etc/hostname
 echo "hostname=\"$hostname_input\"" > /etc/conf.d/hostname
 cat > /etc/hosts << EOF
 127.0.0.1	localhost
-::1		localhost
+::1			localhost
 127.0.1.1	$hostname_input.localdomain	$hostname_input
 EOF
 print_success "Hostname configurado como: $hostname_input"
@@ -195,7 +197,7 @@ passwd "$username"
 
 # Configurar sudo
 print_info "Configurando sudo..."
-sed -i '9i Defaults env_reset,pwfeedback,INSULTS' /etc/sudoers
+sed -i '9i Defaults env_reset,pwfeedback,insults' /etc/sudoers
 sed -i 's/# %wheel ALL=(ALL) ALL/%wheel ALL=(ALL) ALL/' /etc/sudoers
 print_success "Usuário $username criado e sudo configurado!"
 
