@@ -189,7 +189,7 @@ print_success "Serviços configurados!"
 # Passo 12: Criar usuário
 print_step "12" "Criando usuário"
 read -p "Digite o nome do usuário que deseja criar: " username
-useradd -m -g users -G wheel,storage,power,network,audio,video,daemon,dbus,disk,lp,optical,input,games,rfkill,scanner -s /bin/bash "$username"
+useradd -m -g users -G wheel,storage,power,network,audio,video,daemon,dbus,disk,lp,optical,input,games,scanner -s /bin/bash "$username"
 print_info "Defina a senha para o usuário $username:"
 passwd "$username"
 
