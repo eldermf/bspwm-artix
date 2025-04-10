@@ -47,18 +47,7 @@ log_and_print "Installing base system..."
 run basestrap /mnt base base-devel linux linux-firmware vim openrc elogind-openrc amd-ucode
 
 log_and_print "Generating fstab..."
-if mountpoint -q /mnt; then
-    if fstabgen_output=$(fstabgen -U /mnt 2>>"$log"); then
-        echo "$fstabgen_output" >> /mnt/etc/fstab
-        log_and_print "fstab generated successfully."
-    else
-        echo -e "${RED}✗ Failed to generate fstab.${NC}" | tee -a "$log"
-        exit 1
-    fi
-else
-    echo -e "${RED}✗ /mnt is not mounted. Aborting fstab generation.${NC}" | tee -a "$log"
-    exit 1
-fi
+fstabgen -U /mnt >> /mnt/etc/fstab 
 
 log_and_print "Entering chroot environment to configure system..."
 
