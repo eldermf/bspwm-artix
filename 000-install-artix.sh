@@ -198,7 +198,7 @@ passwd "$username"
 # Configurar sudo
 print_info "Configurando sudo..."
 sed -i '9i Defaults env_reset,pwfeedback,insults' /etc/sudoers
-sed -i 's/# %wheel ALL=(ALL) ALL/%wheel ALL=(ALL) ALL/' /etc/sudoers
+sed -i 's/# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
 print_success "Usuário $username criado e sudo configurado!"
 
 print_info "Instalação dentro do chroot concluída. Retornando ao ambiente de instalação..."
