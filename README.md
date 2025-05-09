@@ -55,14 +55,30 @@ In addition to the configuration files, I've included some Bash scripts to help 
 
 **Use these dotfiles and installation scripts at your own risk.** I am not responsible for any data loss or system instability that may occur as a result of using them. It is always a good idea to back up your existing configuration files before applying new ones.
 
-## Further Enhancements (Optional)
+## Keybindings (Sxhkd)
 
-* **Detailed Script Documentation:** You could add comments within the Bash scripts explaining each step.
-* **Selective Installation:** Implement options in the installation scripts to allow users to choose which dotfiles they want to install.
-* **Dependency Management:** The scripts could potentially check for and install necessary dependencies (again, with a clear warning and user confirmation).
-* **System-Specific Branches:** If you use these dotfiles across multiple machines with slight variations, you could consider using Git branches to manage the differences.
-* **Visual Showcase:** Adding a screenshot or GIF of your desktop setup can make your repository more visually appealing.
-* **Explanation of Key Bindings:** You could include a section explaining some of your keybindings in `sxhkdrc`.
-* **Theme Information:** Mention the GTK, icon, and other themes you are using.
+Here's a table showcasing some of my keybindings configured with `sxhkd`:
+
+| Key Combination        | Action                     | Application/Command        |
+| :--------------------- | :------------------------- | :------------------------- |
+| `super + Return`       | Launch terminal emulator   | `alacritty`                |
+| `super + alt + q`      | Quit BspWM                 |                            |
+| `super + alt + r`      | Restart BspWM              |                            |
+| `super + d`            | Launch Rofi (drun menu)    | `rofi -modi drun -show drun` |
+| `alt + F3`             | Launch Xfce4 App Finder    | `xfce4-appfinder`          |
+| `super + x`            | Launch Rofi Powermenu      | `powermenu`                |
+| `super + alt + w`      | Launch Wallpaper Selector  | `wallpaper-selector`       |
+| `super + shift + f`    | Launch file manager        | `thunar`                   |
+| `super + shift + w`    | Launch web browser         | `firefox`                  |
+| `super + shift + e`    | Launch text editor         | `geany`                    |
+| `ctrl + alt + v`       | Launch Vim in terminal     | `alacritty -e vim`         |
+| `ctrl + alt + r`       | Launch Ranger in terminal  | `alacritty -e ranger`      |
+| `ctrl + alt + h`       | Launch Htop in terminal    | `alacritty -e htop`        |
+| `alt + l`              | Launch Rofi Beats          | `rofi-beats`               |
+| `alt + k`              | Kill Rofi Beats            | `killall rofi-beats`       |
+| `ctrl + alt + t`       | Launch Terminator          | `terminator`               |
+| `ctrl + alt + g`       | Launch Google Chrome       | `google-chrome`            |
+| `ctrl + alt + u`       | Launch Pavucontrol         | `pavucontrol`              |
+| `Print`                | Take a screenshot          | `flameshot`                |
 
 Feel free to adapt and expand upon this `README.md` file as needed! Good luck with your dotfiles!
