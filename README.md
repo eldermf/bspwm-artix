@@ -80,5 +80,3 @@ Here's a table showcasing some of my keybindings configured with `sxhkd`:
 | `ctrl + alt + g`       | Launch Google Chrome       | `google-chrome`            |
 | `ctrl + alt + u`       | Launch Pavucontrol         | `pavucontrol`              |
 | `Print`                | Take a screenshot          | `flameshot`                |
-
-Feel free to adapt and expand upon this `README.md` file as needed! Good luck with your dotfiles!
