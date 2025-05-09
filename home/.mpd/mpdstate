@@ -1,0 +1,33 @@
+sw_volume: 98
+audio_device_state:1:pulse audio
+audio_device_state:1:my_fifo
+state: pause
+current: 16
+time: 89.239
+random: 0
+repeat: 1
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0
+mixrampdelay: -1
+lastloadedplaylist: 
+playlist_begin
+0:As You Fade Away MASTER 3 21 22.mp3
+1:Best of Me.mp3
+2:Immortal.mp3
+3:NEFFEX - GO! (MASTER 3 21 22) 1.0.mp3
+4:NEFFEX - I Won't Stop (NEW M1).mp3
+5:NEFFEX - MY WAY (MASTER 2.0).mp3
+6:Night_The Beauty and the Beast.mp3
+7:Evanescence_My Immortal.mp3
+8:Evanescence_Bring Me To Life.mp3
+9:NEFFEX - Grateful [Copyright Free].mp3
+10:Cartoon - On & On (feat. Daniel Levi) [NCS Release].mp3
+11:Culture Code - Make Me Move (feat. Karra) [NCS Release].mp3
+12:Janji - Heroes Tonight (feat. Johnning) [NCS Release].mp3
+13:N3WPORT - Power (feat. braev) [NCS Release].mp3
+14:Nightwish_Nemo.mp3
+15:nightwish_-_bless_the_child-alc.mp3
+16:nightwish_-_sleeping_sun-alc.mp3
+playlist_end

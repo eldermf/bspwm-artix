@@ -1,0 +1,77 @@
+/**
+*   Título: Arquivo de configuração do script wallpaper-selector.sh 
+*   Autor: Elder M. Fouraux
+*   Data: 18/04/2025
+**/
+
+configuration {
+    show-icons: true;
+    icon-theme: "Papirus";
+    drun-display-format: "{name}";
+}
+
+* {
+    background:     #00000099;
+    background-alt: #111111FF;
+    foreground:     #FFFFFFFF;
+    selected:       #1F87FFFF;
+    active:         #00CCFFFF;
+    urgent:         #FF5555FF;
+    font:           "Sans 10";
+}
+
+window {
+    transparency:    "real";
+    background-color: @background;
+    text-color:       @foreground;
+    border-radius:    12px;
+    width:            1000px;
+    height:           706px;
+    location:         center;
+    anchor:           center;
+}
+
+mainbox {
+    background-color: transparent;
+    children:         [ "listview" ];
+    padding:          5px;
+}
+
+listview {
+    background-color: transparent;
+    dynamic:          true;
+    columns:          3;
+    lines:            2;
+    spacing:          5px;
+    cycle:            true;
+    layout:           vertical;
+    padding:          5px;
+}
+
+element {
+    background-color: transparent;
+    text-color:       @foreground;
+    orientation:      vertical;
+    border-radius:    8px;
+    padding:          2px;
+}
+
+element-icon {
+    size:             305px;
+    border-radius:    8px;
+    background-color: @background-alt;
+}
+
+element-text {
+    horizontal-align: 0.5;
+    vertical-align:   0.5;
+    margin:           6px 0 0 0;
+    background-color: transparent;
+    text-color:       inherit;
+}
+
+element selected {
+    background-color: @selected;
+    text-color:       @foreground;
+    border-radius:    8px;
+}
