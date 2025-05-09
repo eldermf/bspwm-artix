@@ -1,3 +1,8 @@
+
+
+https://github.com/user-attachments/assets/e610dfa9-b751-4d08-8269-5759124c2134
+
+
 # My Artix GNU/Linux Dotfiles (BspWM + OpenRC)
 
 This repository contains my personal configuration files (dotfiles) for my Artix GNU/Linux system, featuring the BspWM window manager and the OpenRC init system.
